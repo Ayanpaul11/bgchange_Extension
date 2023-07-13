@@ -1,0 +1,26 @@
+{
+    "manifest_version":2,
+    "name":"Projectdemo",
+    "description":"Project",
+    "version":"1.0",
+    "icons":{
+        "16":"/images/icon1.png",
+        "48":"/images/icon1.png",
+        "128":"/images/icon1.png"
+
+    },
+    "page_action":{
+        "default_icon":{
+            "16":"/images/icon1.png",
+            "48":"/images/icon1.png",
+            "128":"/images/icon1.png"
+        }
+    },
+    "content_scripts":[
+        {
+        "matches":["https://www.google.com/*"],
+        "css":["main.css"]
+    }
+    ]
+
+}
